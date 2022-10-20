@@ -37,7 +37,7 @@ let person={
 }
 let p1={
     lastname:'doe',
-    __proto__:person  // tow times underscore
+    __proto__:person  // two times underscore
 }
 console.log(p1.age);
 
