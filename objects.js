@@ -31,27 +31,37 @@
 // 
 
 
-let person={
-    firstname:'john',
-    age:24
-}
-let p1={
-    lastname:'doe',
-    __proto__:person  // two times underscore
-}
-console.log(p1.age);
+// let person={
+//     firstname:'john',
+//     age:24
+// }
+// let p1={
+//     lastname:'doe',
+//     __proto__:person  // two times underscore
+// }
+// console.log(p1.age);
 
-let p2=
- {
-    isAdult:true,
-    __proto__:p1
-}
+// let p2=
+//  {
+//     isAdult:true,
+//     __proto__:p1
+// }
 
 
-let ob={
-    "firstname":'krati',
-    age:24
+// let ob={
+//     "firstname":'krati',
+//     age:24
+// }
+// console.log(ob);
+// ob['lastname']='goyal'
+// console.log(ob["lastname"]);
+
+const fs=require("fs");
+function callback(err,data)
+{
+    if(!err)
+    {
+        console.log(data);
+    }
 }
-console.log(ob);
-ob['lastname']='goyal'
-console.log(ob["lastname"]);
+fs.readFile('file1.html','utf-8',callback);
