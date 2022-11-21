@@ -61,7 +61,16 @@ function callback(err,data)
 {
     if(!err)
     {
-        console.log(data);
+        console.log(data)
     }
+    else
+    {
+        console.log(err);
+    }
+    // callback();
 }
-fs.readFile('file1.html','utf-8',callback);
+fs.readFile("file1.html","utf-8",callback);
+setTimeout
+( function(){
+    console.log("readed");
+ }, 2 );
