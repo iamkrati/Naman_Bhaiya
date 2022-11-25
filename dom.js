@@ -22,6 +22,7 @@ function clk(e) {
 
 }
 // Delete
+
 document.addEventListener('click', removeLI);
 function removeLI(e) {
     // e.preventDefault();
