@@ -4,6 +4,7 @@ then(response=>
   return response.json();
 }).then(data=>{
   let html="";
+  console.log(data);
     data.forEach(d=>
       {
         console.log(d.name);
